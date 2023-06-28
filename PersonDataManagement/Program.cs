@@ -8,7 +8,8 @@
 
             List<Person> person = new List<Person>();
             PersonDataMang.AddRecords(person);
-            PersonDataMang.DisplayAllRecords(person);
+            //PersonDataMang.DisplayAllRecords(person);
+            PersonDataMang.RetreiveTop2Records(person);
         }
     }
 }

@@ -33,5 +33,13 @@ namespace PersonDataManagement
                 Display(person);
             }
         }
+
+        public static void RetreiveTop2Records(List<Person> personList)
+        {
+            foreach(Person person in personList.FindAll(x => x.Age < 60).Take(2))
+            {
+                Display(person);
+            }
+        }
     }
 }
