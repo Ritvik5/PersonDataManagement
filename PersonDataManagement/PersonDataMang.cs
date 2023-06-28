@@ -16,13 +16,13 @@ namespace PersonDataManagement
         {
             personList.Add(new Person(1, "Pot", "Mumbai", 25));
             personList.Add(new Person(2, "Bot", "Mumbai", 55));
-            personList.Add(new Person(3, "Rae", "Pune", 19));
+            personList.Add(new Person(3, "Rae", "Pune", 17));
             personList.Add(new Person(4, "Tom", "Delhi", 18));
             personList.Add(new Person(5, "Ross", "Rampur", 75));
             personList.Add(new Person(6, "Racheal", "Manali", 15));
             personList.Add(new Person(7, "Joey", "Dehradun", 35));
             personList.Add(new Person(8, "John", "Mumbai", 65));
-            personList.Add(new Person(9, "Snow", "Kanpur", 11));
+            personList.Add(new Person(9, "Snow", "Kanpur", 14));
             personList.Add(new Person(10, "Jack", "Lucknow", 15));
         }
         
@@ -37,6 +37,14 @@ namespace PersonDataManagement
         public static void RetreiveTop2Records(List<Person> personList)
         {
             foreach(Person person in personList.FindAll(x => x.Age < 60).Take(2))
+            {
+                Display(person);
+            }
+        }
+
+        public static void RetreiveBetweenRange(List<Person> personList)
+        {
+            foreach(Person person in personList.FindAll(x => x.Age >=13 && x.Age <= 18))
             {
                 Display(person);
             }
