@@ -10,7 +10,8 @@
             PersonDataMang.AddRecords(person);
             //PersonDataMang.DisplayAllRecords(person);
             //PersonDataMang.RetreiveTop2Records(person);
-            PersonDataMang.RetreiveBetweenRange(person);
+            //PersonDataMang.RetreiveBetweenRange(person);
+            PersonDataMang.AverageAge(person);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,12 @@ namespace PersonDataManagement
             {
                 Display(person);
             }
+        }
+
+        public static void AverageAge(List<Person> personList)
+        {
+            var averageAge = personList.Average(x => x.Age);
+            Console.WriteLine("The average age is : "+averageAge);
         }
     }
 }
